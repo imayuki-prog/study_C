@@ -1,18 +1,26 @@
+#include <cstdio>
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 int main()
 {
-    int width;
-    int height;
-    int perimeter;
+    double kg_t;
+    double user_t;
+    double taxes;
+    double total;
     
-    cout << "Enter the width and height of rectangle.\nIt will be calculated the perimeter of rectangle." << endl;
-    cout << "The width : "; cin >> width;
-    cout << "The hegith : "; cin >> height;
+    cout << "Enter the price without tax of one kilogram of tomatoes : $"; cin >> kg_t;
+    cout << "How much kilogram of tomatoes do you want to buy? : "; cin >> user_t;
+    cout << "How many persent is taxes? : "; cin >> taxes;
     
-    perimeter = 2 * (width + height);
+    total = (kg_t * user_t) * ((taxes + 100) / 100);
     
-    cout << "The perimerter is " << perimeter << endl;
+    cout << "The total price is $" << fixed << setprecision(2) << total << endl;
+    
+    /*6. Write a program that asks the user to type the price without tax of one kilogram of tomatoes, the number of kilograms you want to buy and the tax in percent units. The program must write the total price including taxes. */
+
+
     
 }

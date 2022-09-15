@@ -21,6 +21,6 @@ int main()
     
     /*6. Write a program that asks the user to type the price without tax of one kilogram of tomatoes, the number of kilograms you want to buy and the tax in percent units. The program must write the total price including taxes. */
 
-
+    return 0;
     
 }

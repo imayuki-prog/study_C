@@ -21,4 +21,6 @@ int main()
         
     cout << "\nThe total hours worked is "<< total << endl;
 
+    return 0;
+
 }

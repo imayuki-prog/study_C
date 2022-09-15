@@ -14,5 +14,6 @@ int main()
     perimeter = 2 * (width + height);
     
     cout << "The perimerter is " << perimeter << endl;
-    
+
+    return 0;    
 }

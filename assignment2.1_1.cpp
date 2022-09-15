@@ -1,6 +1,7 @@
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
-main()
+int main()
 {
     int n = 4, k = 2;
 
@@ -21,7 +22,7 @@ main()
 
     cout << n + k << endl;
     cout <<   n   << endl;
-    cont <<   k   << endl;
+    cout <<   k   << endl;
 
     cout << n << k << endl;
 
@@ -32,7 +33,7 @@ main()
     cout << "\n" << endl;
 
     cout << " n * n = "; //CAREFUL!
-    cunt << n * n << endl;
+    cout << n * n << endl;
 
     cout << 'n' << endl;
 

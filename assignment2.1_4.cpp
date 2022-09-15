@@ -20,4 +20,6 @@ int main()
     cout << second << endl;
     cout << first  << endl;
 
+    return 0;
+
 }

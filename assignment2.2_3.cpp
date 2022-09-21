@@ -66,7 +66,7 @@ switch (order_n)
     break;
     
     default:
-    cout << "Error! Order number is not correct";
+    cout << "Error! Order number is not correct.";
     break;
 }
     

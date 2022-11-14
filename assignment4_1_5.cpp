@@ -1,29 +1,51 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-int qua(int, int, int, int);
+float qua(float, float, float);
 
 int main()
 {
-    int a, b, c, x;
+    float a, b, c;
     
-    cout << "Enter a, b, c, x for quadratic calculating: ";
-    cin >> a >> b >> c >> x;
+    cout << "Enter numbers for quadratic calculating.\n";
+    cout << "Quadratic formula ax2 + bx + c = 0\n";
+    cout << "a "; cin >> a;
+    cout << "b "; cin >> b;
+    cout << "c "; cin >> c;
     
 
-    cout << "Result " << qua(a, b, c, x) << endl;
+    qua(a, b, c);
     
     return 0;
 }
 
-int qua(int a, int b, int c, int x)
+float qua(float a, float b, float c)
 {
-    int qua;
-    qua = ((a * x)*(a * x)) + (b * x) + c;
+    float kai1, kai2, real, imag, discriminant;
     
-    // ax2 + bx + c
-
-
-    return qua;
+  discriminant = b * b - 4 * a * c;
+ 
+  if ( discriminant > 0 ) {
+ 
+    kai1 = ( -b + sqrt(discriminant) ) / (2*a) ;
+    kai2 = ( -b - sqrt(discriminant) ) / (2*a);
+ 
+    cout << "x = " <<  kai1 << ", " << kai2;
+ 
+ 
+  } else if ( discriminant == 0 ) {
+ 
+    kai1 = kai2 = -b / ( 2 * a );
+ 
+    cout << "x = " <<  kai1 << ", " << kai2;
     
+    
+  } else {
+ 
+    real = -b / (2*a);
+    imag = sqrt(-discriminant) / (2*a);
+ 
+    cout << "x = " << real << imag << ", " << real << imag;
+  }
 }

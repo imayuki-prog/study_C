@@ -1,4 +1,4 @@
-// Online C++ compiler to run C++ program online
+
 #include <iostream>
 using namespace std;
 
@@ -33,10 +33,10 @@ void g_c_d(int a, int b)
     
     if (a <= 0 || b <= 0) {
     gcd = 0;
-    cout << "GCD is " << gcd;
+    cout << "Error";
 }
     else {
-    cout << "GCD is " << gcd;
+    cout << "The greatest common divisor is " << gcd;
 }
 
 }

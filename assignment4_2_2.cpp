@@ -21,7 +21,6 @@ return 0;
 }
 
 
-// Return type of function is void because value is not returned.
 void prime(double a, double b, double c, double d)
 {
 

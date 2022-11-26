@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdio.h>
-#include <ctype.h>
 #include <limits>
 #include <iomanip>
 using namespace std;
@@ -28,7 +26,7 @@ int main () {
        break;
     } 
 
-    cout<<"Which currency is the base?\n"<<"0. Canadian Dollar\n1. US Dollar\n2. Euro\n3. British Pound\n4. Japanese Yen\n5. Chinese Yuan\n6. Korean Won\n7. Swiss Franc\n8. South African Rand\n9. Australian Dollar\n"<<"Enter a number: ";
+    cout<<"\nWhich currency is the base?\n"<<"0. Canadian Dollar\n1. US Dollar\n2. Euro\n3. British Pound\n4. Japanese Yen\n5. Chinese Yuan\n6. Korean Won\n7. Swiss Franc\n8. South African Rand\n9. Australian Dollar\n"<<"Enter a number: ";
     cin>>row;
     
     while(row>=10)
